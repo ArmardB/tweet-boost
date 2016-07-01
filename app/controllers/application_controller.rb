@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   before_filter :load_tweets
 
   def load_tweets
-  	@tweets = Twitter.user_timeline[0..4] # limit to 4 tweets
+    @tweets = Twitter.user_timeline[0..4] # limit to first 5 tweets
   end
 end
