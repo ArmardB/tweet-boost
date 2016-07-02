@@ -1,3 +1,5 @@
 http://i1230.photobucket.com/albums/ee500/designguy09/launchtweet.png
 
 Rails 4 application utilizing the Twitter API. Users can search a keyword and receive a stream of the latest tweets matching their search criteria.
+
+Live demo: https://launchtweet.herokuapp.com/
