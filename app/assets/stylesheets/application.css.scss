@@ -11,13 +11,118 @@
  * file per style scope.
  *
  *= require_self
-//= require foundation_and_overrides
-
- *= require foundation
- *= font-awesome
+ *= require foundation_and_overrides
+ *= require font-awesome
  *= require_tree .
  */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic);
+
+/************** NAVIGATION *************/
+nav.top-bar {
+	padding-top: 10px;
+	background-color: rgba(3, 169, 244, 0.05);
+	
+}
+
+.name h1 {
+float: left;
+list-style: none;
+font-size: 1.75em;
+font-weight: 700;
+color: #ff9800;
+
+				span {
+					color: #03a9f4;
+				}
+}
+			
+li.active a {
+	float: right;
+	list-style: none;
+}
+
+li.name {
+	list-style: none;
+}
+
+.active {
+	list-style: none;
+}
+
+.row {
+	padding-top: 30px;
+  text-align: center;
+}
+
+/************** END NAVIGATION *************/
+
+input.button {
+	border-radius: 5px;
+  box-shadow: 1px 2px 6px #333;
+  font-weight: 700;
+}
+
+input#search {
+	border-radius: 5px;
+	box-shadow: 3px 3px 12px #333;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+
+/************** SEARCH RESULTS *************/
+#search-results {
+ 	margin: 0% 5%;
+  margin-top: 4%;
+  .twitter-result {
+    list-style: none;
+    border-bottom: 1px solid darken(#F5F8FA, 10%);
+    padding: 5px 0 20px 0;
+    .twitter-image {
+      display: inline-block;
+      margin: 5px;
+      width: 6%;
+      vertical-align: top;
+      img {
+        // Nah, even though Twitter does it, border radii are so last year...
+        // border-radius: 5px;
+      }
+    }
+    .twitter-content {
+      position: relative;
+      display: inline-block;
+      width: 92%;
+      word-wrap: break-word;
+      h1 {
+        display: inline;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      h1 span {
+      	color: #03A9F0;
+      }
+      h2 {
+        display: inline;
+        font-size: 0.9rem;
+      }
+      span {
+        position: absolute;
+        top: 0;
+        right: 5px;
+      }
+      i {
+        font-size: 1.4rem;
+        color: #222;
+        &:hover {
+          color: #008CBA;
+        }
+      }
+    }
+    &:hover {
+      background-color: darken(#F5F8FA, 0%);
+    }
+  }
+}
 
 

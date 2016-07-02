@@ -2,13 +2,13 @@
 
   <ul>
     <% @results.each do |tweet| %>
-      <li class="tweet">
+      <li class="twitter-result">
 
-        <div class="tweet-image">
+        <div class="twitter-image">
           <%= image_tag("#{tweet.user.profile_image_url}") %>
         </div>
 
-        <div class="tweet-content">
+        <div class="twitter-content">
           <h1><%= tweet.user.name %></h1>
           <h2><%= "@#{tweet.user.user_name}" %></h2><br>
 
@@ -28,18 +28,18 @@
               <% end %>
 
               <% if favorited == true %>
-                <i class="fa fa-check-circle-o" style="color: #008CBA;"></i>
+                <!-- <i class="fa fa-check-circle-o" style="color: #008CBA;"></i> -->
               <% else %>
-                <%= link_to raw('<i class="fa fa-check-circle-o"></i>'), favorite_path(tweet: tweet.id, search: params[:search]), method: 'post' %>
+                <#%= link_to raw('<i class="fa fa-check-circle-o"></i>'), favorite_path(tweet: tweet.id, search: params[:search]), method: 'post' %>
               <% end %>
 
             <% else %>
-              <a href="#" data-reveal-id="myModal"><i class="fa fa-check-circle-o"></i></a>
+              <!-- <a href="#" data-reveal-id="myModal"><i class="fa fa-check-circle-o"></i></a>
               <div id="myModal" class="reveal-modal" data-reveal>
                 <h2>Holy crap WHAT ARE YOU DOING?!?!?</h2>
                 <p class="lead">Just kidding, it's no biggie. But, you'll need to sign in before you do that.</p>
                 <a class="close-reveal-modal">&#215;</a>
-              </div>
+              </div> -->
             <% end %>
             
           </span>

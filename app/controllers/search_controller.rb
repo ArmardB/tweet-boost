@@ -1,7 +1,8 @@
 class SearchController < ApplicationController
   def index
-    # Set number of tweets to be displayed on initial search
+    #Set number of tweets to be displayed on initial search
     if params[:increment]
+      @display = 10
       @display = params[:increment].to_i
     else
       @display = 10
@@ -21,16 +22,16 @@ class SearchController < ApplicationController
     end
   end
 
-  def create
-    # Create or add to each users favorited_tweets array
-    @favorited_tweet = params[:tweet]
-    current_user.favorited_tweets ||= []
-    current_user.favorited_tweets << @favorited_tweet
+#   def create
+#     # Create or add to each users favorited_tweets array
+#     @favorited_tweet = params[:tweet]
+#     current_user.favorited_tweets ||= []
+#     current_user.favorited_tweets << @favorited_tweet
 
-    # Save it and redirect to searches#index
-    if current_user.save
-      redirect_to root_path(search: params[:search])
-    end
-  end
+#     # Save it and redirect to searches#index
+#     if current_user.save
+#       redirect_to root_path(search: params[:search])
+#     end
+#   end
 end
 
