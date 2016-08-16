@@ -18,7 +18,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic);
 
-/************** NAVIGATION *************/
+/*------------- NAV BAR  -----------------*/
 nav.top-bar {
 	padding-top: 10px;
 	background-color: rgba(3, 169, 244, 0.05);
@@ -55,7 +55,7 @@ li.name {
   text-align: center;
 }
 
-/************** END NAVIGATION *************/
+/*------------- TERM OF NAV  -----------------*/
 
 input.button {
 	border-radius: 5px;
@@ -71,7 +71,7 @@ input#search {
 	margin-bottom: 22px;
 }
 
-/************** SEARCH RESULTS *************/
+/*------------- SEARCH  -----------------*/
 #search-results {
  	margin: 0% 5%;
   margin-top: 4%;
@@ -84,10 +84,7 @@ input#search {
       margin: 5px;
       width: 6%;
       vertical-align: top;
-      img {
-        // Nah, even though Twitter does it, border radii are so last year...
-        // border-radius: 5px;
-      }
+     
     }
     .twitter-content {
       position: relative;
@@ -125,4 +122,6 @@ input#search {
   }
 }
 
-
+h2.search-for-it {
+  color: #ec5840;
+}

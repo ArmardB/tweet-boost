@@ -1,15 +1,14 @@
 <nav class="top-bar" data-topbar>
   <ul>
     <li class="name">
-      <h1><span>Launch</span>Tweet</h1>
+      <%= link_to '<h1><span>Launch</span>Tweet</h1>'.html_safe, root_path %>
     </li>
   </ul>
   <ul>
     <% if current_user %>
       <li><%= link_to "#{current_user.name}", logout_path %></li>
       <li class="active"><%= link_to "Sign Out", logout_path %></li>
-    <% else %>
-      <!-- <li class="active"><%= link_to "Sign in with Twitter", "/auth/twitter" %></li> -->
+    
     <% end %>
   
   </ul>

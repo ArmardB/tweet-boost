@@ -13,7 +13,7 @@ function checkScroll() {
         console.log("Tweets Displayed: " + (incrementVal));
         $.get("/searches/", {search: searchVal, increment: incrementVal}, null, 'script');
       } else {
-        console.log("Max number of tweets displayed! Sorry! You'll have to bother those Twitter guys about that.");
+        console.log("Reach search threshold. Come back again later!");
         clearInterval(scrollInterval);
       };
     };
