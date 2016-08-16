@@ -22,16 +22,5 @@ class SearchController < ApplicationController
     end
   end
 
-#   def create
-#     # Create or add to each users favorited_tweets array
-#     @favorited_tweet = params[:tweet]
-#     current_user.favorited_tweets ||= []
-#     current_user.favorited_tweets << @favorited_tweet
-
-#     # Save it and redirect to searches#index
-#     if current_user.save
-#       redirect_to root_path(search: params[:search])
-#     end
-#   end
 end
 
